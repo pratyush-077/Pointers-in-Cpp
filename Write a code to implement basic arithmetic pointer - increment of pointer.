@@ -1,0 +1,77 @@
+// EXPERIMENT 9
+// NAME: Pratyush Saha
+// PRN: 24070123078
+// Class: ENTC A3
+// Problem statement:- Write a code to implement basic arithmetic pointer - increment of pointer.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 2;
+    bool b = true;
+    double c = 10.5;
+    float d = 23.0;
+
+    int* aptr;
+    bool* bptr;
+    double* cptr;
+    float* dptr;
+
+    cout<<"Data type: int."<<endl;
+    cout << "Value of a: " << a << endl;
+    aptr = &a;
+    cout << "Initial address of a: " << aptr << endl;
+    aptr++;
+    cout << "Incremented address of a: " << aptr << endl << endl;
+
+    
+     cout<<"Data type: bool."<<endl;
+    cout << "Value of b: " << b << endl;
+    bptr = &b;
+    cout << "Initial address of b: " << *bptr << endl;
+    bptr++;
+    cout << "Incremented address of b: " << *bptr << endl << endl;
+
+     cout<<"Data type: double"<<endl;   
+    cout << "Value of c: " << c << endl;
+    cptr = &c;
+    cout << "Initial address of c: " << cptr << endl;
+    cptr++;
+    cout << "Incremented address of c: " << cptr << endl << endl;
+
+   
+    cout<<"Data type: float."<<endl;
+    cout << "Value of d: " << d << endl;
+    dptr = &d;
+    cout << "Initial address of d: " << dptr << endl;
+    dptr++;
+    cout << "Incremented address of d: " << dptr << endl << endl;
+
+    return 0;
+}
+
+
+
+
+/*Output:-
+Data type: int.
+Value of a: 2
+Initial address of a: 0x7ffcb3bbb96c
+Incremented address of a: 0x7ffcb3bbb970
+
+Data type: bool.
+Value of b: 1
+Initial address of b: 1
+Incremented address of b: 2
+
+Data type: double
+Value of c: 10.5
+Initial address of c: 0x7ffcb3bbb960
+Incremented address of c: 0x7ffcb3bbb968
+
+Data type: float.
+Value of d: 23
+Initial address of d: 0x7ffcb3bbb95c
+Incremented address of d: 0x7ffcb3bbb960
+*/
